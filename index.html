@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookShelf Pro</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>BookShelf Pro</h1>
+
+      <div class="add-item">
+        <input type="text" id="title" placeholder="Book/Article Title" />
+        <input type="text" id="author" placeholder="Author" />
+        <textarea id="description" placeholder="Description"></textarea>
+        <button id="addButton">
+          Add to Wishlist <img src="assets/shopping-cart.png" width="35px" />
+        </button>
+      </div>
+
+      <div class="search-container">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search by title or author..."
+        />
+      </div>
+
+      <div class="sections">
+        <div class="section">
+          <h2>Wishlist <img src="assets/wishlist.png" width="45px" /></h2>
+          <ul id="wishlist"></ul>
+        </div>
+        <div class="section">
+          <h2>
+            Currently Reading<img src="assets/reading-book.png" width="45px" />
+          </h2>
+          <ul id="currentlyReading"></ul>
+        </div>
+        <div class="section">
+          <h2>Read <img src="assets/stack-of-books.png" width="45px" /></h2>
+          <ul id="read"></ul>
+        </div>
+      </div>
+      <div style="display: flex; align-items: center; justify-content: center">
+        <button
+          id="saveToFile"
+          class="save-btn"
+          style="display: flex; align-items: center; justify-content: center"
+        >
+          Save Data to <img src="assets/pdf.png" width="35px" />
+        </button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.21/jspdf.plugin.autotable.js"></script>
+  </body>
+</html>
